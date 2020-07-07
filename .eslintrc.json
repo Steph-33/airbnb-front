@@ -13,5 +13,23 @@
     "ecmaVersion": 11
   },
   "plugins": ["react", "prettier", "@typescript-eslint"],
-  "rules": {}
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "import/no-dynamic-require": "warn",
+    "global-require": "warn",
+    "strict": "warn",
+    "consistent-return": "warn",
+    "no-dupe-keys": "warn",
+    "no-shadow": "warn",
+    "no-else-return": "warn",
+    "prefer-const": "warn",
+    "no-restricted-syntax": "off",
+    "no-useless-escape": "warn"
+  }
 }
