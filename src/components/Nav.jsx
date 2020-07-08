@@ -15,8 +15,8 @@ export default function Nav() {
         </NavLink>
         <div className="box-links">
           <h5>Aide</h5>
-          <button>Inscription</button>
-          <button>Connexion</button>
+          <button className="btn-noStyle">Connexion</button>
+          <button className="btn-style">Inscription</button>
         </div>
       </nav>
       <Route exact path="/" component={Home} />

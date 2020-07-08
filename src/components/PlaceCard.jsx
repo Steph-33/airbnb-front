@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../sass/partials/_placeCard.scss';
 export default function PlaceCard({ place }) {
   return (
