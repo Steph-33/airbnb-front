@@ -18,7 +18,7 @@ export default function Home() {
     getPlaces();
   }, [allPlaces]);
   return (
-    <div className="App">
+    <div className="container-places">
       {allPlaces.map((place, index) => (
         <PlaceCard place={place} key={index} />
       ))}
