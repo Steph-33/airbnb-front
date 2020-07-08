@@ -6,11 +6,18 @@ export default function Nav() {
   return (
     <BrowserRouter>
       <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Accueil</NavLink>
-          </li>
-        </ul>
+        <NavLink to="/">
+          <img
+            className="logo"
+            src="/assets/images/logo/airbnb-logo.png"
+            alt="logo"
+          />
+        </NavLink>
+        <div className="box-links">
+          <h5>Aide</h5>
+          <button>Inscription</button>
+          <button>Connexion</button>
+        </div>
       </nav>
       <Route exact path="/" component={Home} />
     </BrowserRouter>
