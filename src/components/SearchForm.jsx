@@ -20,7 +20,7 @@ export default function SearchForm() {
           <label>VOYAGEURS</label>
           <select>
             <option>Ajouter des voyageurs</option>
-            <option>1</option>
+            <option selected="selected">1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>

@@ -11,7 +11,7 @@ export default function Home() {
       try {
         const response = await axios.get('http://localhost:8000/api/places');
         // console.log(response);
-        setAllPlaces(response.data);
+        setAllPlaces(response.data.reverse());
       } catch (error) {
         console.error(error);
       }
