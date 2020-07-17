@@ -59,3 +59,17 @@
   border: none;
   cursor: pointer;
 }
+
+.box-error {
+  background-color: #f8d7da;
+  border: 1px solid #ef6665;
+  width: 70%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.box-error h4 {
+  color: rgb(156, 156, 156);
+  font-weight: 500;
+}

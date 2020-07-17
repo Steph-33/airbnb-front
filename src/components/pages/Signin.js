@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 export default function Signin() {
   const [signin, setSignin] = useState({ email: '', password: '' });
-  const [error, setError] = useState({});
+  const [error, setError] = useState(null);
   const [toDashboard, setToDashboard] = useState(false);
 
   const handleChange = (event) => {
@@ -41,8 +41,14 @@ export default function Signin() {
       {toDashboard ? <Redirect to="/" /> : null}
       <div className="side-left"></div>
       <div className="side-right">
-        {error ? <h1>{error.error}</h1> : ''}
         <img src="/assets/images/logo/logo-complete.png" alt="logo" />
+        {error ? (
+          <div className="box-error">
+            <h4>{error.error}</h4>
+          </div>
+        ) : (
+          ''
+        )}
         <form className="form-signin">
           <input
             className="input-signin"
