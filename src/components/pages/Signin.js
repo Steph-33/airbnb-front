@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 export default function Signin() {
   const [signin, setSignin] = useState({ email: '', password: '' });
   const [error, setError] = useState({});
-
+  const [toDashboard, setToDashboard] = useState(false);
   const handleChange = (event) => {
     setSignin({ ...signin, [event.target.name]: event.target.value });
   };
@@ -16,6 +16,7 @@ export default function Signin() {
       .post('http://localhost:8000/api/signin', signin)
       .then((response) => {
         console.log(response);
+        setToDashboard(true);
         setSignin({ email: '', password: '' });
       })
       .catch((error) => {
@@ -32,6 +33,7 @@ export default function Signin() {
       action="/signin"
       onSubmit={handleSubmit}
     >
+      {toDashboard ? <Redirect to="/" /> : null}
       <div className="side-left"></div>
       <div className="side-right">
         {error ? <h1>{error.error}</h1> : ''}
