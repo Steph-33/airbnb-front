@@ -90,7 +90,6 @@ export default function Register() {
             placeholder="Votre adresse e-mail"
             value={signup.email}
             onChange={handleChange}
-            required
           />
           {/* <div className="box-radios">
             <div className="radio">
@@ -118,10 +117,10 @@ export default function Register() {
           />
           <input
             className="input-signin"
-            type="avatar"
+            type="text"
             name="avatar"
             placeholder="https://votre_avatar_jpeg.com"
-            value={signup.password}
+            value={signup.avatar}
             onChange={handleChange}
             required
           />
