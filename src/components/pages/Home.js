@@ -19,6 +19,7 @@ export default function Home() {
     };
     getPlaces();
   }, [allPlaces]);
+
   return (
     <div class="container">
       <SearchForm />

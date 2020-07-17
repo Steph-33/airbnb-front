@@ -14,4 +14,17 @@
   .portal {
     height: 1.3rem;
   }
+
+  .box-session p {
+    margin: 0;
+    padding-right: 1em;
+    color: rgb(107, 107, 107);
+    font-weight: 500;
+  }
+
+  .fa-sign-out {
+    color: #ef6665;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
 }

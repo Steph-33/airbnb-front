@@ -12,3 +12,21 @@ nav {
 .portal {
   height: 1.5rem;
 }
+
+.box-session {
+  display: flex;
+  /* background: red; */
+  align-items: center;
+}
+.box-session p {
+  margin: 0;
+  padding-right: 1em;
+  color: rgb(107, 107, 107);
+  font-weight: 500;
+}
+
+.fa-sign-out {
+  color: #ef6665;
+  font-size: 1.9rem;
+  cursor: pointer;
+}

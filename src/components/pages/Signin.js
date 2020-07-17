@@ -6,6 +6,7 @@ export default function Signin() {
   const [signin, setSignin] = useState({ email: '', password: '' });
   const [error, setError] = useState({});
   const [toDashboard, setToDashboard] = useState(false);
+
   const handleChange = (event) => {
     setSignin({ ...signin, [event.target.name]: event.target.value });
   };
@@ -16,8 +17,12 @@ export default function Signin() {
       .post('http://localhost:8000/api/signin', signin)
       .then((response) => {
         console.log(response);
-        setToDashboard(true);
         setSignin({ email: '', password: '' });
+        localStorage.setItem('token', response.data.token);
+        localStorage.setItem('firstname', response.data.user.firstname);
+        localStorage.setItem('lastname', response.data.user.lastname);
+        localStorage.setItem('role', response.data.user.role);
+        setToDashboard(true);
       })
       .catch((error) => {
         console.log(error.response.data);
