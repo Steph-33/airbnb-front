@@ -1,0 +1,45 @@
+.container-portal {
+  /* background-color: red; */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-portal img {
+  height: 91px;
+}
+
+.box-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  padding-top: 2em;
+}
+
+.box-buttons button {
+  margin: 0.6em;
+  height: 42px;
+  width: 286px;
+  border-radius: 4rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.253);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-style {
+  background-color: #ef6665;
+  color: white;
+  font-size: inherit;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-noStyle {
+  border: 1px solid #ef6665;
+  background-color: white;
+  color: #ef6665;
+  font-size: inherit;
+  font-weight: 600;
+}

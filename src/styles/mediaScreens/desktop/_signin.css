@@ -1,0 +1,70 @@
+@media only screen and (min-width: 1224px) {
+  .container-signin {
+    /* background-color: red; */
+    height: 95vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  .side-left {
+    background-color: #ef6665;
+    display: flex !important;
+    width: 50%;
+    height: 100%;
+  }
+
+  .side-right {
+    height: 100%;
+    width: 50% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .side-right img {
+    height: 91px;
+  }
+
+  .form-signin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .input-signin {
+    height: 3rem;
+    width: 50% !important;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 4rem;
+    padding: 1em;
+    outline: none;
+    margin: 1em;
+    font-size: 0.9em;
+  }
+
+  .form-signin button {
+    margin: 0.6em;
+    height: 42px;
+    width: 250px;
+    border-radius: 4rem;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.253);
+    outline: none;
+    background-color: #ef6665;
+    color: white;
+    font-size: inherit;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+  .form-signin button:hover {
+    transform: scale(1.1);
+  }
+}

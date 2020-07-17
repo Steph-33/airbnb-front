@@ -1,12 +1,14 @@
 import React from 'react';
 import Nav from './components/Nav';
 
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <header>
+        <Nav />
+      </header>
     </div>
   );
 }

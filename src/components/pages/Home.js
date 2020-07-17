@@ -7,6 +7,7 @@ export default function Home() {
   const [allPlaces, setAllPlaces] = useState([]);
 
   useEffect(() => {
+    document.title = 'Airbnb | Accueil';
     const getPlaces = async () => {
       try {
         const response = await axios.get('http://localhost:8000/api/places');
@@ -21,9 +22,10 @@ export default function Home() {
   return (
     <div class="container">
       <SearchForm />
-      <div class="heading">
+      <div className="heading">
         <p>+ de {allPlaces.length} séjours</p>
         <h1>Logements : les plus récents</h1>
+        <div className="separator"></div>
       </div>
       <div className="container-places">
         {allPlaces.map((place, index) => (

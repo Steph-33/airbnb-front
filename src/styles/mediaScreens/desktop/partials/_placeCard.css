@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1224px) {
+  .container-places {
+    /* background-color: purple; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box-place {
+    background-color: white;
+    height: 23rem;
+    width: 20%;
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16);
+  }
+
+  .box-place img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1em 1em 0em 0em;
+  }
+
+  .place-infos {
+    padding: 1em;
+  }
+
+  .title {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+
+  .description {
+    color: rgb(105, 105, 105);
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  .price {
+    color: rgb(129, 129, 129);
+    font-size: 1em;
+  }
+
+  .price span {
+    color: black;
+  }
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1224px) {
+  .container-portal {
+    /* background-color: red; */
+    height: 95vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  .btn-style,
+  .btn-noStyle {
+    transition-duration: 1s;
+  }
+
+  .btn-style:hover,
+  .btn-noStyle:hover {
+    transform: scale(1.1);
+  }
+}
