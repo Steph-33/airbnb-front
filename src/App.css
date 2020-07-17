@@ -9,3 +9,4 @@
 @import './styles/mediaScreens/desktop/_portal.css';
 @import './styles/mediaScreens/desktop/partials/_nav.css';
 @import './styles/mediaScreens/desktop/partials/_placeCard.css';
+@import './styles/pages/_signup.css';

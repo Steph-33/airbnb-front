@@ -1,0 +1,22 @@
+.box-radios {
+  /* background-color: red; */
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.radio {
+  margin-right: 4em;
+}
+
+.radio input {
+  color: #ef6665;
+}
+
+.radio label {
+  font-size: 1em;
+  color: #ef6665;
+  font-weight: 600;
+}
